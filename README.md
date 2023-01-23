@@ -1,3 +1,7 @@
+# goit-react-hw-03
+
+## fs60-react-module03-homework (image-finder)
+
 # React homework template
 
 Этот проект был создан при помощи
@@ -18,18 +22,6 @@
 `«Create repository from template»`.
 
 ![Creating repo from a template step 2](./assets/template-step-2.png)
-
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
-
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
-
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
-
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
 
 Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
 репозитория-шаблона. Далее работай с ним как с любым другим личным репозиторием,
