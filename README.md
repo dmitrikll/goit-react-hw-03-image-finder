@@ -2,6 +2,8 @@
 
 ## fs60-react-module03-homework (image-finder)
 
+![image-finder](./assets/hw3.png)
+
 # React homework template
 
 Этот проект был создан при помощи

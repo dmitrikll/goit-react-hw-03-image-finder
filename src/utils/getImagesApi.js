@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Notify } from 'notiflix';
 
 const API_KEY = '31646623-01570f01238a20d01c1f98059';
 const API_URL = 'https://pixabay.com/api/';
@@ -13,9 +14,14 @@ export async function getImages(query, page) {
     q: query,
   };
 
-  const response = await axios.get(API_URL, {
-    params: SEARCH_PARAMS,
-  });
+  try {
+    const response = await axios.get(API_URL, {
+      params: SEARCH_PARAMS,
+    });
 
-  return response.data;
+    return response.data;
+  } catch (error) {
+    Notify.info('Something went wrong - try again later...');
+    console.error(error);
+  }
 }

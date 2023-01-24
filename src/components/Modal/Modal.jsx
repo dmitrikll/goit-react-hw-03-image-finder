@@ -14,15 +14,15 @@ export class Modal extends Component {
     window.removeEventListener('keydown', this.onKeyDown);
   }
 
-  onKeyDown = event => {
-    if (event.code !== 'Escape') {
+  onKeyDown = e => {
+    if (e.code !== 'Escape') {
       return;
     }
     this.props.toggle();
   };
 
-  clickOnBackDrop = event => {
-    if (event.target === event.currentTarget) {
+  clickOnBackDrop = e => {
+    if (e.target === e.currentTarget) {
       this.props.toggle();
     }
   };
@@ -42,6 +42,7 @@ export class Modal extends Component {
 }
 
 Modal.propTypes = {
-  image: PropTypes.string,
-  tags: PropTypes.string,
+  image: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+  toggle: PropTypes.func.isRequired,
 };

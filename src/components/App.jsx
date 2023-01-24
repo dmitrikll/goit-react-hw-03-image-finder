@@ -26,13 +26,13 @@ export class App extends Component {
     }
 
     if (page >= totalPages && images !== prevState.images) {
-      Notify.warning('The end of search results.');
+      Notify.success('No more results...');
     }
   }
 
-  onSubmit = async evt => {
-    evt.preventDefault();
-    const input = evt.target.elements.search;
+  onSubmit = async e => {
+    e.preventDefault();
+    const input = e.target.elements.search;
     const value = input.value.trim();
     const page = 1;
 
